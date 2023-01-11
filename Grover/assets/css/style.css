@@ -1,0 +1,596 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #F55253;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F55253;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #F55253;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #fc7979;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#logog {
+  width: 15px;
+}
+
+.logo ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#circle {
+  align-items: center;
+  padding-left: 6px;
+  margin-right: 7px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(133.03deg, #FF5E5F 12.93%, #F54748 93.97%);
+  border-radius: 50%;
+}
+
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 22px 0;
+  background: #fff;
+}
+
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+}
+
+#header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #4D4D4D;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #F55253;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: #F55253;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #F55253;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  margin-top:0px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #2E2E2E;
+}
+
+#hero h2 {
+  color: #676767;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #F55556;
+  border: none;
+  background-color: #FDECEC;
+  margin-bottom: 15px;
+}
+
+#hours{
+  color: #F54748;
+  font-weight: 400;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.pics ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.pics ul .chef{
+  margin-left: 120px;
+}
+
+.pics ul li .rectangle{
+  margin-top: -50px;
+}
+
+.pics p{
+  font-size: smaller;
+  color: #2E2E2E;
+}
+.pics h5{
+  color: #2E2E2E;
+  margin-top: -20px;
+}
+
+.clock-box{
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  text-align: center;
+  background: #FFFFFF;
+}
+.abstract{
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+.orange-box {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  background: #FFFFFF;
+  box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.btn-click {
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  color:#FFFAFA;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  background-color: #F86061;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.btn-click:hover {
+  background: #f37979;
+  color: #FFFAFA;
+}
+
+.btn-click2 {
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  border-radius: 50px;
+  color: #f37979;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  background-color: #FFFAFA;
+  border-radius: 12px;
+  box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f37979;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color:#FEF5F5;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.section-pretitle {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform:capitalize;
+  position: relative;
+  color: #2E2E2E;
+}
+
+.section-pretitle h5 {
+  font-size: 20px;
+  text-transform:capitalize;
+  position: relative;
+  color: #F54748;
+}
+
+
+.section-title h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title h2::after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title p {
+  margin: 15px 0 0 0;
+}
+
+/*--------------------------------------------------------------
+# serve
+--------------------------------------------------------------*/
+
+#serve{
+  width: 100%;
+  height: 100vh;
+  margin-top:0px;
+  background-color: #FEF5F5;
+}
+
+.serve .content .bgdiv{
+  background: url(assets/img/fill.png);
+  width: 400px;
+  height: 450px;
+}
+.serve .content .card{
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 310px;
+  border-radius: 12px;
+  border-style: none;
+  text-align: center !important;
+  position: absolute;
+  color: #2E2E2E;
+  font-family: "Poppins";
+}
+.serve .content img {
+  width: 35%;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.serve .content h4{
+  margin-bottom: 30px;
+}
+.serve .content p{
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Choose
+--------------------------------------------------------------*/
+#choose{
+  width: 100%;
+  height: 100vh;
+  margin-top:0px;
+  background-color: E5E5E5;
+}
+.choose .imageandcard img{
+  width: 90%;
+  margin-left: 50px;
+}
+.choose .content {
+  padding: 40px;
+  margin-top: 40px;
+}
+.choose .content h5{
+  color: #03A66B;
+  text-align: left;
+}
+.choose .content h2{
+  color: #2E2E2E;
+  text-align: left;
+}
+.choose .content p{
+  text-align: left;
+}
+
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+#home{
+  width: 100%;
+  height: 100vh;
+  margin-top:0px;
+  background-color: E5E5E5;
+}
+.home .imageandcard img{
+  margin-top: -80px;
+  width: 90%;
+}
+.home .content {
+  padding: 40px;
+  padding-left: 60px;
+  margin-top: 40px;
+}
+.home .content h5{
+  color: #F9BA45;
+  text-align: left;
+}
+.home .content h2{
+  color: #2E2E2E;
+  text-align: left;
+}
+.home .content p{
+  text-align: left;
+}
+
+/*--------------------------------------------------------------
+# phone
+--------------------------------------------------------------*/
+#phone{
+  width: 100%;
+  height: 100vh;
+  margin-top:0px;
+  background-color: #FEF5F5;
+}
+.phone .imageandcard img{
+  width: 40%;
+  margin-left: 120px;
+}
+.phone .content {
+  padding: 40px;
+  margin-top: 40px;
+  margin-left: -20px;
+}
+.phone .content h5{
+  color: #F54748;
+  text-align: left;
+}
+.phone .content h2{
+  color: #2E2E2E;
+  text-align: left;
+}
+.phone .content p{
+  text-align: left;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .contact-about .logo{
+  margin-bottom: 30px;
+}
+.contact .left-most{
+  margin-right: 0px;
+}
+.contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #676767;
+}
+
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #3498db;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #3498db;
+}
+
+.contact .social-links a:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.contact .info {
+  color: #676767;
+}
+
+.contact .info i {
+  font-size: 32px;
+  color: #3498db;
+  float: left;
+  line-height: 1;
+}
+
+.contact .info p {
+  margin-right: 0px;
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+.contact .info p strong {
+  color: #2E2E2E;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  color: #676767;
+  font-size: 14px;
+}
+
+#footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+  color: #222222;
+}
+
+#footer .footer-links a {
+  color: #222222;
+  padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+  color: #F55253;
+}
